@@ -1,0 +1,68 @@
+:root {
+  --sat1-red: #e60000;
+  --sat1-dark: #111;
+  --sat1-bg: #0b0b0b;
+  --panel-bg: rgba(17,17,17,0.8);
+  --text: #f3f3f3;
+}
+
+html, body, #app, #map {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--sat1-bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+#controls {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  background: var(--panel-bg);
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+}
+
+#controls button {
+  background: var(--sat1-red);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#controls button:hover {
+  background: #c40000;
+}
+
+.panel {
+  position: absolute;
+  right: 12px;
+  background: var(--panel-bg);
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 260px;
+}
+
+#search { top: 12px; }
+#coords { top: 120px; display: flex; gap: 6px; align-items: center; }
+
+#search input { width: 100%; padding: 6px 8px; border-radius: 6px; border: 1px solid #333; background: #1a1a1a; color: #eee; }
+#coords input { width: 84px; padding: 6px 8px; border-radius: 6px; border: 1px solid #333; background: #1a1a1a; color: #eee; }
+#coords button { background: var(--sat1-red); color: #fff; border: none; padding: 6px 10px; border-radius: 6px; cursor: pointer; }
+
+#search .results { list-style: none; margin: 8px 0 0; padding: 0; max-height: 220px; overflow: auto; }
+#search .results li { padding: 6px 8px; border-radius: 6px; cursor: pointer; }
+#search .results li:hover { background: rgba(255,255,255,0.08); }
