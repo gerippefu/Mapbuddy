@@ -14,6 +14,16 @@
         <button data-region="NRW">NRW</button>
         <button data-region="DE">Deutschland</button>
         <button data-region="WORLD">Welt</button>
+        <button id="click-mode">Click-Mode</button>
+      </div>
+      <div id="search" class="panel">
+        <input name="q" placeholder="Adresse suchen..." autocomplete="off" />
+        <ul class="results"></ul>
+      </div>
+      <div id="coords" class="panel">
+        <input name="lat" placeholder="Lat" />
+        <input name="lng" placeholder="Lng" />
+        <button>Setzen</button>
       </div>
     </div>
     <script type="module" src="/src/js/MapApp.js"></script>

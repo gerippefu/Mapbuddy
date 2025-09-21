@@ -3,6 +3,7 @@
 // =============================================================================
 import L from 'leaflet';
 import { RegionManager } from './RegionManager.js';
+import { MarkerInputManager } from './MarkerInputManager.js';
 
 const map = L.map('map', {
   center: [51.5, 7.5],
@@ -26,4 +27,12 @@ document.querySelectorAll('#controls [data-region]').forEach(btn => {
     const id = btn.getAttribute('data-region');
     regionManager.switchToRegion(id);
   });
+});
+
+const markerInput = new MarkerInputManager(map);
+markerInput.setupAddressSearch();
+markerInput.setupCoordinateInput();
+
+document.getElementById('click-mode').addEventListener('click', () => {
+  markerInput.enableClickMode();
 });

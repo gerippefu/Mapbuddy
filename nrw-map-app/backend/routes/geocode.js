@@ -1,5 +1,4 @@
 import { Router } from 'express';
-import fetch from 'node-fetch';
 import { config } from '../config/index.js';
 
 const router = Router();
