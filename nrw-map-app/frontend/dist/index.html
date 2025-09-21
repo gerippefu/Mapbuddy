@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRW Map App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <script type="module" crossorigin src="/assets/index-C5PWLiZJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CbAMDr5b.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="map"></div>
+      <div id="controls">
+        <button data-region="NRW">NRW</button>
+        <button data-region="DE">Deutschland</button>
+        <button data-region="WORLD">Welt</button>
+        <button id="click-mode">Click-Mode</button>
+      </div>
+      <div id="search" class="panel">
+        <input name="q" placeholder="Adresse suchen..." autocomplete="off" />
+        <ul class="results"></ul>
+      </div>
+      <div id="coords" class="panel">
+        <input name="lat" placeholder="Lat" />
+        <input name="lng" placeholder="Lng" />
+        <button>Setzen</button>
+      </div>
+    </div>
+  </body>
+  </html>
