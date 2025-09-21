@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NRW Map App</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <link rel="stylesheet" href="/src/css/sat1.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="map"></div>
+      <div id="controls">
+        <button data-region="NRW">NRW</button>
+        <button data-region="DE">Deutschland</button>
+        <button data-region="WORLD">Welt</button>
+      </div>
+    </div>
+    <script type="module" src="/src/js/MapApp.js"></script>
+  </body>
+  </html>
